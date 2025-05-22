@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+:root {
+  --light-hover: #fcf4ff;
+  --dark-hover: #2a004a;
+  --dark-theme: #11001F;
+  --font-outfit: 'Outfit', sans-serif;
+  --font-ovo: 'Ovo', serif;
+  --shadow-black: 4px 4px 0 #000;
+  --shadow-white: 4px 4px 0 #fff;
+  --light-bg: #ffffff;
+  --dark-bg: #111010;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+.dark {
+  --bg-color: var(--dark-theme);
+  color: var(--text-dark);
+  background-color: var(--dark-theme);
+}
+
+.dark body {
+  color: var(--text-dark);
+  background-color: var(--dark-theme);
+}
+
+/* Utility classes using Tailwind layer */
+@layer utilities {
+  .font-outfit {
+    font-family: var(--font-outfit);
+  }
+  .font-ovo {
+    font-family: var(--font-ovo);
+  }
+  .bg-light-hover {
+    background-color: var(--light-hover);
+  }
+  /* Add hover variant explicitly */
+  .hover\:bg-light-hover:hover {
+    background-color: var(--light-hover);
+  }
+  .bg-dark-hover {
+    background-color: var(--dark-hover);
+  }
+  .bg-dark-theme {
+    background-color: var(--dark-theme);
+  }
+  
+  /* Custom box shadow utilities */
+  .shadow-black {
+    box-shadow: var(--shadow-black);
+  }
+  .shadow-white {
+    box-shadow: var(--shadow-white);
+  }
+  
+  /* Hover variants for shadows */
+  .hover\:shadow-black:hover {
+    box-shadow: var(--shadow-black);
+  }
+  .hover\:shadow-white:hover {
+    box-shadow: var(--shadow-white);
+  }
+}
+
+/* Find and modify this section if it exists */
+@media (prefers-color-scheme: dark) {
+  /* Comment out or remove this section to disable automatic dark mode */
+  /*
+  :root {
+    --light-hover: #2a004a;
+    --dark-hover: #fcf4ff;
+    --dark-theme: #fcf4ff;
+    --shadow-black: 4px 4px 0 #fff;
+    --shadow-white: 4px 4px 0 #000;
+    
+    --background: #11001F;
+    --text: #ffffff;
+    --border: #4b5563;
+    --card-bg: #1f0038;
+    --card-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--text);
+  }
+  */
+}
