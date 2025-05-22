@@ -85,7 +85,7 @@ export const workData = [
     {
         title: 'Simon Game',
         description: 'Frontend Project',
-        bgImage: '/simon.png',
+        bgImage: '/Simon.png',
     },
     {
         title: 'Nike Website Clone',
