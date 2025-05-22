@@ -85,7 +85,7 @@ export const workData = [
     {
         title: 'Simon Game',
         description: 'Frontend Project',
-        bgImage: '/Simon.png',
+        bgImage: '/simon.png',
     },
     {
         title: 'Nike Website Clone',
@@ -95,17 +95,17 @@ export const workData = [
     {
         title: 'Tic Tac Toe',
         description: 'Frontend Project',
-        bgImage: '/Tic-Tac-Toe.png',
+        bgImage: '/tictactoe.png',
     },
     {
         title: 'Weather App',
         description: 'Frontend Project',
-        bgImage: '/Weather.png',
+        bgImage: '/weather.png',
     },
     {
         title: 'Restaurant Website',
         description: 'Frontend Project',
-        bgImage: '/Restaurant.png',
+        bgImage: '/restaurant.png',
     },
 ]
 
