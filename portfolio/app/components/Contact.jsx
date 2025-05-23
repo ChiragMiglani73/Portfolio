@@ -38,40 +38,40 @@ const Contact = ({isDarkMode}) => {
       <motion.h4
        initial={{y:-20,opacity:0}}
        whileInView={{y:0,opacity:1}}
-       transition={{duration:0.5,delay:0.3}}
+       transition={{duration:0.5,delay:0.1}}
        className='text-center mb-2 text-lg font-ovo'>Contact with me</motion.h4>
       <motion.h2
        initial={{y:-20,opacity:0}}
        whileInView={{y:0,opacity:1}}
-       transition={{duration:0.5,delay:0.5}}
+       transition={{duration:0.5,delay:0.3}}
        className='text-center text-5xl font-ovo'>Get in touch</motion.h2>
       <motion.p 
        initial={{opacity:0}}
        whileInView={{opacity:1}}
-       transition={{duration:0.5,delay:0.7}}
+       transition={{duration:0.5,delay:0.5}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>I'd love to hear from you! If you have any questions, comments, or feedback, please use the form below</motion.p>
 
       <motion.form
        initial={{opacity:0}}
        whileInView={{opacity:1}}
-       transition={{duration:0.5,delay:0.9}}
+       transition={{duration:0.5,delay:0.7}}
        onSubmit={onSubmit} className='max-w-2xl mx-auto'>
         <div className='grid grid-cols-2 gap-6 mt-10 mb-8'>
             <motion.input
              initial={{x:-50,opacity:0}}
              whileInView={{x:0,opacity:1}}
-             transition={{duration:0.6,delay:1.1}}
+             transition={{duration:0.6,delay:0.8}}
              type='text' placeholder='Enter your name' required className={`p-3 outline-none border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-700 transition-colors duration-300 ${isDarkMode ? 'bg-[#2a004a]/30 border-white/90 ' : 'bg-white'}`} name='name'/>
             <motion.input
              initial={{x:50,opacity:0}}
              whileInView={{x:0,opacity:1}}
-             transition={{duration:0.6,delay:1.2}}
+             transition={{duration:0.6,delay:0.9}}
              type='email' placeholder='Enter your email' required className={`p-3 outline-none border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-700 transition-colors duration-300 ${isDarkMode ? 'bg-[#2a004a]/30 border-white/90 ' : 'bg-white'}`} name='email'/>
         </div>
         <motion.textarea
          initial={{y:100,opacity:0}}
          whileInView={{y:0,opacity:1}}
-         transition={{duration:0.6,delay:1.3}}
+         transition={{duration:0.6,delay:1}}
          rows='6' placeholder='Enter your message' required className={`w-full p-4 outline-none border border-gray-300 rounded-lg hover:border-gray-500 focus:border-gray-700 transition-colors duration-300 ${isDarkMode ? 'bg-[#2a004a]/30 border-white/90 ' : 'bg-white'}`} name='message'></motion.textarea>
         <motion.button
          whileHover={{scale:1.05}}

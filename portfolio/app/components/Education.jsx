@@ -16,14 +16,14 @@ const Education = ({ isDarkMode }) => {
         initial={{ y: -50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
 
-        transition={{ duration: 0.8, delay: 0.2 }}
+        transition={{ duration: 0.8, delay: 0.1 }}
       >
         <motion.h4
           className={`text-center mb-2 text-lg font-ovo ${isDarkMode ? 'text-white' : 'text-gray-800'}`}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
   
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           Academic Background
         </motion.h4>
@@ -32,7 +32,7 @@ const Education = ({ isDarkMode }) => {
           initial={{ scale: 0.8, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
   
-          transition={{ duration: 0.6, delay: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
         >
           My Education
         </motion.h2>
@@ -42,7 +42,7 @@ const Education = ({ isDarkMode }) => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
   
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
         >
           {/* School Card */}
           <motion.div
@@ -52,7 +52,7 @@ const Education = ({ isDarkMode }) => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
     
-            transition={{ duration: 0.8, delay: 1 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             <div className="w-full h-56 overflow-hidden">
               <Image
@@ -70,7 +70,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.2 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
               >
                 New Green Field School, New Delhi
               </motion.h2>
@@ -79,7 +79,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.4 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
               >
                 10th & 12th Board: CBSE
               </motion.p>
@@ -88,7 +88,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.6 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
               >
                 2023
               </motion.p>
@@ -103,7 +103,7 @@ const Education = ({ isDarkMode }) => {
             initial={{ y: 50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
     
-            transition={{ duration: 0.8, delay: 1.2 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
           >
             <div className="w-full h-56 overflow-hidden">
               <Image
@@ -121,7 +121,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.4 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
               >
                 NSUT, Delhi
               </motion.h2>
@@ -130,7 +130,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.6 }}
+                transition={{ duration: 0.6, delay: 0.8}}
               >
                 Degree: B.Tech in Electronics and Communication with AI and ML
               </motion.p>
@@ -139,7 +139,7 @@ const Education = ({ isDarkMode }) => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
         
-                transition={{ duration: 0.6, delay: 1.8 }}
+                transition={{ duration: 0.6, delay: 0.8}}
               >
                 2023-2027 (Pursuing)
               </motion.p>
